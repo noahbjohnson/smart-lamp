@@ -47,7 +47,6 @@ unsigned char maxLevel = 255;
 unsigned char currentLevel;
 bool isOn = true;
 bool currentlyTouched = false;
-unsigned long touchTime = 0; // The number of milliseconds the current touch event has lasted
 
 // CAPACITANCE GLOBALS
 unsigned long currentCapacitance;
@@ -93,14 +92,6 @@ void logCapacitance() {
         Serial.print(lastReadLength);
         Serial.print("\t");
         Serial.println(currentCapacitance);
-    }
-}
-
-void countTouchTime() {
-    if (currentlyTouched) {
-        touchTime += lastReadLength;
-    } else {
-        touchTime = 0;
     }
 }
 
@@ -167,15 +158,11 @@ void pride() {
 [[maybe_unused]] void loop() {
     // Copy previous loop values
     bool previouslyTouched = currentlyTouched;
-//    unsigned long lastTouchTime = touchTime;
 
     // Check if the lamp is touched
     readCapacitance();
     logCapacitance();
     setTouched();
-
-    // Add to or reset the touch time
-    countTouchTime();
 
     // did they stop touching the lamp? if so toggle
     if (!currentlyTouched) {
