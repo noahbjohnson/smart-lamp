@@ -17,8 +17,8 @@ const int NUM_LED = 85;
 
 // The list of lamp modes to cycle through, in order. Power cycle will always reset to first item
 callbackFunction lampModes[2] = {
-        pride,
-        white
+        white,
+        pride
 };
 
 // INPUT

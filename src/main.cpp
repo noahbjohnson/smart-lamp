@@ -65,16 +65,18 @@ void logCapacitance() {
 
     // decide if the sensor is being touched based on the threshold and value
     currentlyTouched = currentCapacitance > onThreshold;
+
     // Send touch status to controller
     touchController.tick(currentlyTouched);
 
-    lampModes[lampModeIndex]();
-
+    // Show the selected mode or nothing
     if (isOn) {
-        FastLED.show();
+        lampModes[lampModeIndex]();
     } else {
-        FastLED.clearData();
-        FastLED.show();
+        FastLED.showColor(CRGB::Black);
     }
+
+    // Update LED state
+    FastLED.show();
 }
 
