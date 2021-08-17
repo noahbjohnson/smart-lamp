@@ -10,6 +10,7 @@
             "includePath": [
                 "/Users/noahjohnson/Documents/PlatformIO/Projects/SmartLamp/include",
                 "/Users/noahjohnson/Documents/PlatformIO/Projects/SmartLamp/src",
+                "/Users/noahjohnson/Documents/PlatformIO/Projects/SmartLamp/.pio/libdeps/d1_mini/OneButton/src",
                 "/Users/noahjohnson/Documents/PlatformIO/Projects/SmartLamp/.pio/libdeps/d1_mini/FastLED/src",
                 "/Users/noahjohnson/.platformio/packages/framework-arduinoespressif8266/libraries/SoftwareSerial/src",
                 "/Users/noahjohnson/.platformio/packages/framework-arduinoespressif8266/libraries/SPI",
@@ -60,6 +61,7 @@
                 "path": [
                     "/Users/noahjohnson/Documents/PlatformIO/Projects/SmartLamp/include",
                     "/Users/noahjohnson/Documents/PlatformIO/Projects/SmartLamp/src",
+                    "/Users/noahjohnson/Documents/PlatformIO/Projects/SmartLamp/.pio/libdeps/d1_mini/OneButton/src",
                     "/Users/noahjohnson/Documents/PlatformIO/Projects/SmartLamp/.pio/libdeps/d1_mini/FastLED/src",
                     "/Users/noahjohnson/.platformio/packages/framework-arduinoespressif8266/libraries/SoftwareSerial/src",
                     "/Users/noahjohnson/.platformio/packages/framework-arduinoespressif8266/libraries/SPI",
@@ -110,12 +112,12 @@
                 "PLATFORMIO=50101",
                 "ESP8266",
                 "ARDUINO_ARCH_ESP8266",
-                "ARDUINO_ESP8266_WEMOS_D1MINI",
+                "ARDUINO_ESP8266_WEMOS_D1MINIPRO",
                 "F_CPU=80000000L",
                 "__ets__",
                 "ICACHE_FLASH",
                 "ARDUINO=10805",
-                "ARDUINO_BOARD=\"PLATFORMIO_D1_MINI\"",
+                "ARDUINO_BOARD=\"PLATFORMIO_D1_MINI_PRO\"",
                 "FLASHMODE_DIO",
                 "LWIP_OPEN_SRC",
                 "NONOSDK22x_190703=1",
@@ -127,7 +129,6 @@
                 "MMU_ICACHE_SIZE=0x8000",
                 ""
             ],
-            "cStandard": "c17",
             "cppStandard": "c++20",
             "compilerPath": "/Users/noahjohnson/.platformio/packages/toolchain-xtensa/bin/xtensa-lx106-elf-gcc",
             "compilerArgs": [
