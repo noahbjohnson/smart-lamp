@@ -69,7 +69,6 @@ extern bool currentlyTouched;
 extern int8_t lampModeIndex;
 extern unsigned long currentCapacitance;
 extern unsigned long lastReadLength;
-extern unsigned long lastStateChange;
 extern OneButton touchController;
 
 // RGB

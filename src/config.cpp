@@ -28,13 +28,13 @@ callbackFunction lampModes[2] = {
 
 // The minimum capacitance required to trigger an on state.
 // Use the serial output to get an idea for what your value should be.
-long unsigned onThreshold = 3500;
+long unsigned onThreshold = 600;
 
 // How often to write the analog value to the serial port in ms
 unsigned long serialWriteFrequency = 100;
 
 // The number of samples to average for a sensor reading
-unsigned long sampleSize = 75;
+unsigned long sampleSize = 30;
 
 // The period of time to use as a baseline calibration period
 unsigned long calibrationSeconds = 40;

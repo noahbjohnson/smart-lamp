@@ -71,6 +71,7 @@ void logCapacitance() {
 
     // Show the selected mode or nothing
     if (isOn) {
+        FastLED.setBrightness(currentBrightnessLevel);
         lampModes[lampModeIndex]();
     } else {
         FastLED.showColor(CRGB::Black);

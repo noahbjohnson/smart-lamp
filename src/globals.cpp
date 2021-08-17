@@ -17,6 +17,5 @@ int8_t lampModeIndex = 0; // the index of the mode (in the list of modes) that t
 // CAPACITANCE GLOBALS
 unsigned long currentCapacitance;
 unsigned long lastReadLength; // how long the last capacitance sensor read took
-unsigned long lastStateChange;
 
 OneButton touchController = OneButton();
