@@ -30,6 +30,7 @@ extern const uint8_t RECEIVE_PIN;
 extern const int NUM_LED;
 
 // The list of lamp modes to cycle through, in order. Power cycle will always reset to first item
+#define lampModeLength 2
 extern callbackFunction lampModes[2];
 
 // INPUT

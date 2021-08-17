@@ -16,7 +16,7 @@ void handleSingleTap() {
 void handleDoubleTap() {
     Serial.println("handling double tap");
     lampModeIndex++;
-    if (lampModeIndex > sizeof(lampModes)) {
+    if (lampModeIndex >= lampModeLength) {
         lampModeIndex = 0;
     }
 }
