@@ -10,6 +10,7 @@ void handleSingleTap() {
     Serial.println("handling tap");
     isOn = !isOn;
     currentBrightnessLevel = maxBrightnessLevel;
+    lampModeIndex = 0;
 }
 
 // When the lamp is touched twice, cycle to the next mode
