@@ -28,7 +28,7 @@ callbackFunction lampModes[2] = {
 
 // The minimum capacitance required to trigger an on state.
 // Use the serial output to get an idea for what your value should be.
-long unsigned onThreshold = 600;
+long unsigned onThreshold = 350;
 
 // How often to write the analog value to the serial port in ms
 unsigned long serialWriteFrequency = 100;
