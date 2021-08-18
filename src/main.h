@@ -15,7 +15,8 @@
  */
 
 void pride();
-void white();
+void warmWhite();
+void pacifica();
 
 /**
  * CONFIGURATION
@@ -30,8 +31,8 @@ extern const uint8_t RECEIVE_PIN;
 extern const int NUM_LED;
 
 // The list of lamp modes to cycle through, in order. Power cycle will always reset to first item
-#define lampModeLength 2
-extern callbackFunction lampModes[2];
+#define lampModeLength 3
+extern callbackFunction lampModes[3];
 
 // INPUT
 //const unsigned long debounceMilliseconds = 30;

@@ -31,8 +31,9 @@ void handleDoubleTap() {
     // Setup LED
     delay(1000); // for recovery?
     CFastLED::addLeds<LED_TYPE, RGB_PIN, COLOR_ORDER>(ledList, NUM_LED)
-            .setCorrection(TypicalLEDStrip)
+            .setCorrection(UncorrectedColor)
             .setDither(false);
+    FastLED.setMaxPowerInVoltsAndMilliamps( 5, 500);
 
     // Setup handlers
     touchController.attachClick(handleSingleTap);

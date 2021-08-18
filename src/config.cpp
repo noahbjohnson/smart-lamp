@@ -16,9 +16,10 @@ const uint8_t RECEIVE_PIN = 4; // Connect the capacitance sensing input to this 
 const int NUM_LED = 85;
 
 // The list of lamp modes to cycle through, in order. Power cycle will always reset to first item
-callbackFunction lampModes[2] = {
-        white,
-        pride
+callbackFunction lampModes[3] = {
+        warmWhite,
+        pride,
+        pacifica
 };
 
 // INPUT
